@@ -25,4 +25,4 @@ fi
 # append the current timestamp
 echo "## $time\n" >> $file
 
-code $file
+code -n $file
