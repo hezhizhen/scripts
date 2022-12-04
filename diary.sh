@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env sh
+
 cd ~/Dropbox/Diary
 today=$(date +"%Y-%m-%d")
 time=$(date +"%H:%M")
@@ -19,10 +20,10 @@ template="# $today
 "
 
 if [ ! -f "$file" ]; then
-    echo "$template" >> $file
+    echo "$template" >>$file
 fi
 
 # append the current timestamp
-echo "## $time\n" >> $file
+echo "## $time\n" >>$file
 
 code -n $file
