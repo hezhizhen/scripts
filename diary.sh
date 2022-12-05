@@ -24,6 +24,6 @@ if [ ! -f "$file" ]; then
 fi
 
 # append the current timestamp
-echo "## $time\n" >>$file
+echo "\n## $time" >>$file
 
 code -n $file
