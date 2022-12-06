@@ -16,8 +16,7 @@ template="# $today
 * 午餐：
 * 晚餐：
 * 在读：
-* 读完：
-"
+* 读完："
 
 if [ ! -f "$file" ]; then
     echo "$template" >>$file
