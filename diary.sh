@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
-cd ~/Dropbox/Diary
-today=$(date +"%Y-%m-%d")
-time=$(date +"%H:%M")
+cd ~/Dropbox/Diary        # enter diary directory
+today=$(date +"%Y-%m-%d") # set today to the format of YYYY-mm-dd
+time=$(date +"%H:%M")     # set time to the format of HH:MM
 file="$today.md"
 template="# $today
 
@@ -22,7 +22,6 @@ if [ ! -f "$file" ]; then
     echo "$template" >>$file
 fi
 
-# append the current timestamp
-echo "\n## $time" >>$file
+echo "\n## $time" >>$file # append the current timestamp
 
-code -n $file
+code -n $file # open file in VS Code (in a new window)
