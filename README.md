@@ -5,9 +5,12 @@
 To use these scripts:
 
 1. clone this repository to somewhere like `~`
-2. add the directory to `$PATH`
-   1. zsh: `echo 'export PATH=$PATH:$HOME/scripts' >> .zshrc`
-   2. fish: `echo 'set PATH $PATH ~/scripts' >> ~/.config/fish/config.fish`
+2. set environment variable `SCRIPTSPATH`
+   1. zsh: `echo 'export SCRIPTSPATH=$HOME/scripts' >> .zshrc`
+   2. fish: `echo 'set SCRIPTSPATH $HOME/scripts' >> ~/.config/fish/config.fish`
+3. add the directory to `$PATH`
+   1. zsh: `echo 'export PATH=$PATH:$SCRIPTSPATH' >> .zshrc`
+   2. fish: `echo 'set PATH $PATH $SCRIPTSPATH' >> ~/.config/fish/config.fish`
 
 ## Script List
 
