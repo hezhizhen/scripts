@@ -6,17 +6,17 @@ time=$(date +"%H:%M")     # set time to the format of HH:MM
 file="$today.md"
 template="# $today
 
-* 星期：
-* 农历：
-* 天气：
-* 位置：
-* 睡眠：
-* 如厕：
-* 早餐：
-* 午餐：
-* 晚餐：
-* 在读：
-* 读完："
+- 星期：
+- 农历：
+- 天气：
+- 位置：
+- 睡眠：
+- 如厕：
+- 早餐：
+- 午餐：
+- 晚餐：
+- 在读：
+- 读完："
 
 if [ ! -f "$file" ]; then
     echo "$template" >>$file
